@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background-color: #0101fd;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 66% 1fr;
+    grid-template-rows: 200px auto 50px;
+    gap: 1px 1px;
+    grid-template-areas: 
+        "header header header" 
+        ". content ." 
+        "footer footer footer";
+}
+
+#bcnmap {
+    grid-area:content;
+    width:100%;
+    height:100%;
+}
+
+.title {
+    color: #ffaaa9;
+    grid-area: header;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(3rem + (80 - 48) * ((100vw - 300px) / (1600 - 300)));
+    padding-left: 50px;
+}
